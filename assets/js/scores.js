@@ -1,7 +1,7 @@
 var highscoresEL  = document.getElementById("highscores");
 var clearEl       = document.getElementById("clear");
 var arrayScore    = [];
-var optionList    = "";
+var optionList    = ""; 
 
 function printHighscores() {
   // either get scores from localstorage or set to empty array

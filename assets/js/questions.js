@@ -32,6 +32,6 @@ var questions = [
     choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
     answer: "console.log"
   }
-];
+]; 
 
 

@@ -188,6 +188,7 @@ function saveHighscore() {
   }
 }
 
+// check if the user hit "enter"
 function checkForEnter(event) {
 
   // check if event key is enter
