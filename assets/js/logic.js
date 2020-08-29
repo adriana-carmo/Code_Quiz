@@ -28,13 +28,13 @@ var sfxWrong = new Audio("assets/sfx/incorrect.wav");
 //Start the QUIZ
 function startQuiz() {
   // hide start screen
-  hideStartScreen.style.visibility = "hidden";
+  hideStartScreen.style.display  = "none";
 
   // un-hide questions section
   questionsEl.style.display = "block";
 
   // start timer
-   timerId = setInterval(function() {
+ timerId = setInterval(function() {
     time--;
 
     // show starting time
@@ -82,7 +82,6 @@ function getQuestion() {
 
     // display on the page
     listEl.appendChild(optionList); 
-    
   }
 
 }
@@ -90,29 +89,29 @@ function getQuestion() {
 // Check answer question
 function questionClick() {
 
-    //event.preventDefault();
-    var currentId = event.target.parentElement.id;
+  //event.preventDefault();
+  var currentId = event.target.parentElement.id;
 
-    //check if user guessed wrong
-    if(currentId != questions[currentQuestionIndex].answer){
-      // penalize time
-      clockTick()
-      
-      // play "wrong" sound effect
-      sfxWrong.play();
-      returnFeedback = "Wrong!"
-    }
-    else{
-      // play "right" sound effect
-      sfxRight.play();
-      returnFeedback = "Correct!"
+  //check if user guessed wrong
+  if(currentId != questions[currentQuestionIndex].answer){
+    // penalize time
+    clockTick()
+    
+    // play "wrong" sound effect
+    sfxWrong.play();
+    returnFeedback = "Wrong!"
+  }
+  else{
+    // play "right" sound effect
+    sfxRight.play();
+    returnFeedback = "Correct!"
   }
 
-  // show right/wrong feedback 
+  // flash right/wrong feedback 
   feedbackEl.textContent = returnFeedback;
   feedbackEl.style.display = "block";
 
-   // flash right/wrong feedback on page for half a second
+   //After half a second jump to the next question
   setTimeout(function(){ 
     // move to next question
     currentQuestionIndex++
@@ -120,7 +119,7 @@ function questionClick() {
     // check if we've run out of questions
     (currentQuestionIndex >= totalQuestion)? quizEnd() : getQuestion();
 
-    }, 500);
+  }, 500);
    
 }
 
@@ -133,7 +132,7 @@ function quizEnd() {
   endScreenEl.style.display = "block";
 
   // show final score
-  finalScoreEl.textContent = time;;
+  finalScoreEl.textContent = time;
 
   // hide questions section
   questionsEl.style.display = "none";
@@ -184,7 +183,7 @@ function saveHighscore() {
   }
   else
   {
-    alert("Please enter your initials with minimum 2 character");
+    alert("Please, enter your initials with minimum 2 characters.");
   }
 }
 
