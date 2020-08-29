@@ -17,16 +17,16 @@ function printHighscores() {
   });
 
   // for each score
-    for(var i = 0; i < arrayScore.length; i++)
-    {
-      // create li tag for each high score
-      optionList = document.createElement("li");
-    
-      optionList.innerHTML = arrayScore[i].nameUser + " - " + arrayScore[i].scoreUser;
+  for(var i = 0; i < arrayScore.length; i++)
+  {
+    // create li tag for each high score
+    optionList = document.createElement("li");
+  
+    optionList.innerHTML = arrayScore[i].nameUser + " - " + arrayScore[i].scoreUser;
 
-      // display on page
-      highscoresEL.append(optionList) 
-    }
+    // display on page
+    highscoresEL.append(optionList) 
+  }
 }
 
 function clearHighscores() {
