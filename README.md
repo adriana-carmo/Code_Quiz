@@ -31,7 +31,7 @@ The Coding Quiz Challenge contains 5 questions, on each you have 4 multiple choi
 List with initials of name and score in descending order
 
 
-```
+
 
 The following animation demonstrates the application functionality:
 
@@ -40,7 +40,8 @@ The following animation demonstrates the application functionality:
 
 ## 📝 License
 
-Copyright © 2020 [Adriana](https://github.com/adriana-carmo).<br />
+Copyright © 2020 
+[Adriana](https://github.com/adriana-carmo).<br />
 [Code Quiz Homepage](https://adriana-carmo.github.io/Code_Quiz/)
 
 - - -
