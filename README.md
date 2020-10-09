@@ -1,4 +1,4 @@
-# bootcamp-hw-04
+# Code Quiz
 Bootcamp Assignment 
 # 04 Web APIs: Code Quiz
 
@@ -35,7 +35,13 @@ List with initials of name and score in descending order
 
 The following animation demonstrates the application functionality:
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+![code quiz](./assets/04-web-apis-homework-demo.gif)
+
+
+## 📝 License
+
+Copyright © 2020 [Adriana](https://github.com/adriana-carmo).<br />
+[Code Quiz Homepage](https://adriana-carmo.github.io/Code_Quiz/)
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
